@@ -1,4 +1,4 @@
-package coding_review;
+package helloWorld;
 
 public class HelloWorld {
 
