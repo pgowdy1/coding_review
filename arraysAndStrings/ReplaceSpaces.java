@@ -1,5 +1,5 @@
 package arraysAndStrings;
 
-public class HashTable {
+public class ReplaceSpaces {
 
 }
