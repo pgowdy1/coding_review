@@ -9,8 +9,13 @@ public class LinkedListMain {
 			
 		testList.addNodeToTail(2);
 		testList.addNodeToTail(3);
+		testList.addNodeToTail(4);
+		testList.addNodeToTail(5);
 		testList.printList();
-		testList.deleteNode(2);
+		
+		
+		
+		testList.deleteNode(5);
 		testList.printList();
 	}
 	
