@@ -16,6 +16,15 @@ public class StackAndQueueTest {
 		testQueue.enqueue(4);
 		testQueue.enqueue(5);
 		testQueue.peekFront();
+		testQueue.dequeue();
+		testQueue.peekFront();
+		testQueue.dequeue();
+		testQueue.dequeue();
+		testQueue.peekFront();
+		testQueue.dequeue();
+		testQueue.peekFront();
+		testQueue.dequeue();
+		testQueue.peekFront();
 	}
 
 	public static void runStack() {

@@ -19,6 +19,7 @@ public class Queue {
 		else if (firstOut != null && lastOut == null) {
 			Node back = new Node(data);
 			lastOut = back;
+			firstOut.setNextNode(lastOut);
 			System.out.println(data + " has been added to the Queue.");
 		}
 
@@ -34,16 +35,20 @@ public class Queue {
 	public void dequeue() {
 
 		if (firstOut == null) {
-			System.out.println("The queue is empty."); 
+			System.out.println("The queue is empty.");
+		}
+
+		firstOut = firstOut.getNextNode();
+
+	}
+
+	public void peekFront() {
+		if (firstOut != null) {
+			System.out.println(firstOut.getNodeData() + " is at the front of the Queue.");
 		}
 		
-		else if (firstOut.getNextNode() != null) {
-			System.out.println("Dequeuing " + firstOut.getNodeData() + " from queue.");
-			firstOut = firstOut.getNextNode();
+		else {
+			System.out.println("The queue is empty.");
 		}
-	}
-	
-	public void peekFront(){
-		System.out.println(firstOut.getNodeData() + " is at the front of the Queue.");
 	}
 }
